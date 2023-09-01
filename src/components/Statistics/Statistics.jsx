@@ -8,7 +8,7 @@ export const Statistics = ({ title, stats }) => {
   return (
     <section className={css.statistics}>
       <h2 className={css.title}>{title}</h2>
-      <ul>
+      <ul className={css.statList}>
         {stats.map(stat => (
           <li
             style={{ backgroundColor: getRandomHexColor() }}
